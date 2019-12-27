@@ -34,15 +34,12 @@ class ScrollContainer extends Component {
             const { setPanReleased } = this.context;
             setPanReleased(false);
             this.setState({ shouldScroll: false });
-        }else{
-            const { setPanY } = this.context;
-            setPanY(evt.nativeEvent.translationY);
         }
     };
 
     onScroll = (evt) => {
-        const { setScrollY } = this.context;
-        setScrollY(evt.nativeEvent.contentOffset.y);
+        const { setScroll } = this.context;
+        setScroll(evt.nativeEvent.contentOffset.y);
         this.setState({ scrollState: evt.nativeEvent.contentOffset.y });
     };
 
