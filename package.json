@@ -1,6 +1,6 @@
 {
   "name": "@killerwink/react-native-scrollview-pan-observer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "scrollView pan onserver for react native",
   "main": "src/index.js",
   "scripts": {
